@@ -1,0 +1,98 @@
+🎓Halaman Mahasiswa
+Fungsi utama:
+- Memberi mahasiswa akses untuk:
+- Melihat jadwal pertemuan dengan dosen wali
+- Mengetahui status dan catatan bimbingan
+- Mengajukan permintaan pertemuan baru (simulasi)
+
+Isi halaman:
+Header / Navbar
+
+Logo kampus / nama sistem
+
+Menu: Beranda | Jadwal | Ajukan Pertemuan | Logout
+
+Profil Mahasiswa (opsional)
+
+Nama, NIM, Program Studi
+
+Ditampilkan di bagian atas halaman
+
+Tabel Jadwal Pertemuan:
+- Kolom: Tanggal, Topik, Status, Catatan dari Dosen
+- Status bisa ditampilkan dengan warna: “Selesai” (hijau), “Dijadwalkan” (biru), dll.
+- Form Permintaan Pertemuan
+- Input tanggal, topik konsultasi
+- Tombol “Ajukan” (simulasi, tidak perlu diproses)
+- Catatan Dosen
+- Catatan hasil pertemuan sebelumnya
+- Bisa diletakkan di bawah tabel atau sidebar
+
+Footer:
+- Info kontak kampus atau jurusan
+- Hak cipta
+
+
+
+
+
+👨‍🏫 Halaman Dosen Wali
+Fungsi utama:
+Menampilkan daftar mahasiswa bimbingan, jadwal mereka, dan catatan bimbingan (semua disimulasikan statis).
+
+Isi halaman:
+Header / Navbar
+
+Judul: “Dashboard Dosen Wali”
+
+Menu: Mahasiswa | Jadwal | Catatan | Logout
+
+Daftar Mahasiswa Bimbingan
+
+Tabel: Nama, NIM, Topik, Tanggal Pertemuan, Status, Aksi
+
+Aksi bisa berupa tombol “Lihat Catatan” atau “Tandai Selesai” (simulasi)
+
+Form Tambah Catatan
+
+Teks area untuk menulis komentar setelah pertemuan
+
+Tombol simpan (tidak berfungsi, hanya untuk UX)
+
+Ringkasan Status
+
+Info visual: Berapa mahasiswa sudah bimbingan, berapa belum
+
+Bisa pakai grafik dummy atau angka besar
+
+Footer
+- Nama dosen, NIP, fakultas, dan info singkat sistem
+
+🎯 Tujuan Umum Simulasi
+Tidak ada login real atau penyimpanan data
+
+Mahasiswa dan dosen hanya melihat data dummy dan mengisi form yang tidak disimpan
+
+Fokus utama: UI, UX, dan flow antar peran
+
+
+
+📌 Kesimpulan Utama: Pertemuan Mahasiswa & Dosen Wali Sebelum UTS
+🎓 Mahasiswa
+Berperan sebagai pihak yang mencari bimbingan akademik menjelang UTS.
+
+Bisa melihat jadwal bimbingan yang sudah dijadwalkan.
+
+Dapat melihat catatan atau arahan dari dosen wali.
+
+Bisa mengajukan permintaan pertemuan baru untuk diskusi KRS, nilai, tugas, atau progres skripsi.
+
+👨‍🏫 Dosen Wali
+Bertindak sebagai pembimbing akademik, memantau kesiapan mahasiswa menjelang UTS.
+
+Melihat daftar mahasiswa bimbingan dan status pertemuan mereka.
+
+Memberi catatan dan saran akademik berdasarkan hasil pertemuan.
+
+Bisa “menyetujui” atau mencatat status pertemuan (meskipun hanya simulasi di HTML).
+

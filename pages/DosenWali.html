@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen Wali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex min-h-screen bg-gray-100">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-blue-900 text-white flex flex-col p-6 space-y-6">
+        <div class="text-2xl font-bold border-b border-blue-700 pb-4">Dosen Wali</div>
+        <nav class="flex flex-col space-y-3">
+            <a href="#" class="hover:text-blue-300">Mahasiswa</a>
+            <a href="?menu=login" class="hover:text-red-300 mt-auto">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 p-8">
+        <h1 class="text-3xl font-bold mb-6">Dashboard Dosen Wali</h1>
+
+        <!-- Tabel Mahasiswa Bimbingan -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4">Daftar Mahasiswa Bimbingan</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow rounded">
+                    <thead class="bg-blue-100 text-left">
+                        <tr>
+                            <th class="p-3">Nama</th>
+                            <th class="p-3">NIM</th>
+                            <th class="p-3">Topik</th>
+                            <th class="p-3">Tanggal</th>
+                            <th class="p-3">Status</th>
+                            <th class="p-3">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-3">Budi Santoso</td>
+                            <td class="p-3">12345678</td>
+                            <td class="p-3">KRS</td>
+                            <td class="p-3">2025-05-06</td>
+                            <td class="p-3 text-blue-600 font-semibold">Dijadwalkan</td>
+                            <td class="p-3 space-x-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Lihat
+                                    Catatan</button>
+                                <button class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">Tandai
+                                    Selesai</button>
+                            </td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-3">Siti Aminah</td>
+                            <td class="p-3">87654321</td>
+                            <td class="p-3">Progress Skripsi</td>
+                            <td class="p-3">2025-05-04</td>
+                            <td class="p-3 text-green-600 font-semibold">Selesai</td>
+                            <td class="p-3 space-x-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Lihat
+                                    Catatan</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Form Catatan -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4">Tambah Catatan Bimbingan</h2>
+            <textarea class="w-full p-3 border rounded mb-4" rows="4"
+                placeholder="Tulis catatan pertemuan di sini..."></textarea>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Simpan (Simulasi)</button>
+        </section>
+
+        <!-- Ringkasan Status -->
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Ringkasan Status</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-100 text-green-800 p-4 rounded text-center shadow">
+                    <p class="text-lg font-semibold">Mahasiswa Selesai</p>
+                    <p class="text-3xl">12</p>
+                </div>
+                <div class="bg-blue-100 text-blue-800 p-4 rounded text-center shadow">
+                    <p class="text-lg font-semibold">Belum Bimbingan</p>
+                    <p class="text-3xl">5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 border-t pt-6 text-sm text-gray-600">
+            <p>Dr. Andi Hidayat, M.Kom - NIK 1772757 - Fakultas Teknik Informatika</p>
+            <p>&copy; 2025 -- Perwalian</p>
+        </footer>
+    </main>
+</body>
+
+</html>

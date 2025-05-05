@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Halaman Mahasiswa</title>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Sistem Perwalian</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="?menu=login" class="hover:underline">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Profil Mahasiswa</h2>
+            <p>Nama: John Doe</p>
+            <p>NRP: 2372020</p>
+            <p>Program Studi: Teknik Informatika</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Jadwal Pertemuan</h2>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border">Tanggal</th>
+                        <th class="py-2 px-4 border">Topik</th>
+                        <th class="py-2 px-4 border">Status</th>
+                        <th class="py-2 px-4 border">Catatan dari Dosen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border">01/11/2023</td>
+                        <td class="py-2 px-4 border">Diskusi KRS</td>
+                        <td class="py-2 px-4 border text-green-500">Selesai</td>
+                        <td class="py-2 px-4 border">Semua baik</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border">05/11/2023</td>
+                        <td class="py-2 px-4 border">Progres Skripsi</td>
+                        <td class="py-2 px-4 border text-blue-500">Dijadwalkan</td>
+                        <td class="py-2 px-4 border"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Ajukan Pertemuan Baru</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Tanggal</label>
+                    <input type="date" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Topik Konsultasi</label>
+                    <input type="text" class="mt-1 block rounded-md shadow-sm border border-gray-300"
+                        style="width: 900px; height: 300px;" required>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Ajukan</button>
+            </form>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Catatan Dosen</h2>
+            <p>Catatan hasil pertemuan sebelumnya: Diskusi berjalan lancar, perlu fokus pada tugas akhir.</p>
+        </div>
+
+        <footer class="mt-12 border-t pt-6 text-sm text-gray-600">
+            <p>John Dee - 2372020 - Fakultas Teknik Informatika</p>
+            <p>&copy; 2025 Sistem Perwalian</p>
+        </footer>
+    </main
